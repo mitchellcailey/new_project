@@ -1,0 +1,18 @@
+[project]
+name = "fit-check"
+version = "0.1.0"
+description = "CLI that sends an outfit photo to Claude with vision and returns structured style feedback plus a 3-5 color hex palette."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "anthropic>=1.9.0",
+    "pillow>=10.0",
+    "pydantic>=2.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["."]
